@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-    .controller('AppCtrl', function ($scope, $ionicModal, $timeout, AccountService) {
+    .controller('AppCtrl', function ($scope, $ionicModal, $ionicHistory, $state, AccountService) {
 
         // With the new view caching in Ionic, Controllers are only called
         // when they are recreated or on app start, instead of every page change.
@@ -38,6 +38,10 @@ angular.module('starter.controllers', [])
 
         $scope.logout = function () {
             AccountService.logout();
+            $state.go("app.home");
+            $ionicHistory.nextViewOptions({
+                disableBack: true
+            });
         };
 
         // Perform the login action when the user submits the login form

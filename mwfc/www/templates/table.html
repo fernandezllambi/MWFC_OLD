@@ -1,0 +1,43 @@
+<ion-view>
+  <ion-nav-title>Tablas de posiciones</ion-nav-title>
+  <ion-tabs class="tabs-dark">
+
+    <ion-tab title="Apertura">
+      <!-- Tab 1 content -->
+      <ion-content has-header="true" padding="true">
+        <div class="row">
+          <div class="col">Pos</div>
+          <div class="col col-33">Equipo</div>
+          <div class="col">Pts</div>
+          <div class="col">PJ</div>
+          <div class="col">GF</div>
+          <div class="col">GC</div>
+        </div>
+        <div class="row" ng-repeat="team in teams" ng-class="{bold: team.id == 8}">
+          <div class="col">{{$index+1}}</div>
+          <div class="col col-33">{{team.title}}</div>
+          <div class="col">{{team.pts}}</div>
+          <div class="col">{{team.pj}}</div>
+          <div class="col">{{team.gf}}</div>
+          <div class="col">{{team.gc}}</div>
+        </div>
+      </ion-content>
+
+    </ion-tab>
+
+    <ion-tab title="Calusura">
+      <!-- Tab 2 content -->
+      <ion-content has-header="true" padding="true">
+        <h1>Titulo</h1>
+      </ion-content>
+    </ion-tab>
+
+    <ion-tab title="Anual">
+      <!-- Tab 3 content -->
+    </ion-tab>
+
+    <ion-tab title="Descenso">
+      <!-- Tab 4 content -->
+    </ion-tab>
+  </ion-tabs>
+</ion-view>
