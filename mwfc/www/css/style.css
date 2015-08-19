@@ -1,0 +1,16 @@
+/* Empty. Add your own CSS if you like */
+#lineup {
+    background-image: url("../img/field.jpg");
+    background-repeat: round;
+    min-height: 600px;
+}
+
+#lineup .col{
+    text-align: center;
+    min-height: 90px;
+}
+
+#lineup img{
+    border-radius: 50%;
+    height: 55px;
+}
