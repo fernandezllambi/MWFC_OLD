@@ -1,0 +1,15 @@
+<ion-view view-title="Mensajes">
+    <ion-content>
+        <ul class="list">
+            <ion-item class="item" ng-class="{bold : !message.read}" ng-repeat="message in messages" ng-click="showMessage(message)" ">
+                <div class="row">
+                    <div class="col">{{message.title}}</div>
+                    <div class="col col-25">{{message.date}}</div>
+                </div>
+                <div class="row">
+                    <div class="col"><p>{{message.message}}</p></div>
+                </div>
+            </ion-item>
+        </ul>
+    </ion-content>
+</ion-view>

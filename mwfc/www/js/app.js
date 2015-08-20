@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 'starter.services', 'monospaced.qrcode'])
+angular.module('starter', ['ionic', 'ngCordova','ionic.service.core', 'starter.controllers', 'starter.services', 'monospaced.qrcode'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
@@ -46,7 +46,8 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 
                 url: '/fixture',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/fixture.html'
+                        templateUrl: 'templates/fixture.html',
+                        controller: 'FixtureCtrl'
                     }
                 }
             })
@@ -106,6 +107,16 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 
                     'menuContent': {
                         templateUrl: 'templates/table.html',
                         controller: 'TableCtrl'
+                    }
+                }
+            })
+
+            .state('app.messages', {
+                url: '/messages',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/messages.html',
+                        controller: 'MessagesCtrl'
                     }
                 }
             });

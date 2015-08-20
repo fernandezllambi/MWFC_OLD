@@ -1,6 +1,6 @@
 /* Empty. Add your own CSS if you like */
 #lineup {
-    background-image: url("../img/field.jpg");
+    background-image: url("../img/field.png");
     background-repeat: round;
     min-height: 600px;
 }
@@ -21,4 +21,14 @@
 
 .platform-android ion-header-bar h1{
     padding-left: 20px;
+}
+
+.date {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.text-wrap {
+    white-space: normal;
+    word-wrap: break-word;
 }

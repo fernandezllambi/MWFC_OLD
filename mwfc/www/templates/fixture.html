@@ -1,51 +1,247 @@
 <ion-view view-title="Fixture">
-  <ion-content>
-    <ul class="list">
-      <li class="item">
-        Wanderers vs Liverpool 1-1
-      </li>
-      <li class="item">
-        Villa Teresa vs Wanderers <span style="float: right; font-weight: bold;">22/08/15 15:00</span>
-      </li>
-      <li class="item">
-        Wanderers vs Nacional <span style="float: right; font-weight: bold;">22/08/15 15:00</span>
-      </li>
-      <li class="item">
-        Wanderers vs River Plate <span style="float: right; font-weight: bold;">22/08/15 15:00</span>
-      </li>
-      <li class="item">
-        Plaza Colonia vs Wanderers <span style="float: right; font-weight: bold;">22/08/15 15:00</span>
-      </li>
-      <li class="item">
-        Wanderers vs Juventud <span style="float: right; font-weight: bold;">22/08/15 15:00</span>
-      </li>
-      <li class="item">
-        Cerro vs Wanderers <span style="float: right; font-weight: bold;">22/08/15 15:00</span>
-      </li>
-      <li class="item">
-        Wanderers vs El Tanque <span style="float: right; font-weight: bold;">22/08/15 15:00</span>
-      </li>
-      <li class="item">
-        Defensor Sp. vs Wanderers <span style="float: right; font-weight: bold;">22/08/15 15:00</span>
-      </li>
-      <li class="item">
-        Wanderers vs Fenix <span style="float: right; font-weight: bold;">22/08/15 15:00</span>
-      </li>
-      <li class="item">
-        Sud América vs Wanderers <span style="float: right; font-weight: bold;">22/08/15 15:00</span>
-      </li>
-      <li class="item">
-        Wanderers vs Racing <span style="float: right; font-weight: bold;">22/08/15 15:00</span>
-      </li>
-      <li class="item">
-        Peñarol vs Wanderers <span style="float: right; font-weight: bold;">22/08/15 15:00</span>
-      </li>
-      <li class="item">
-        Wanderers vs Danubio <span style="float: right; font-weight: bold;">22/08/15 15:00</span>
-      </li>
-      <li class="item">
-        Rentistas vs Wanderers <span style="float: right; font-weight: bold;">22/08/15 15:00</span>
-      </li>
-    </ul>
-  </ion-content>
+    <ion-content>
+        <ul class="list">
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">16</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/liverpool-u.png" style="width: 30px"/></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Wan</div>
+                    <div class="col">1</div>
+                    <div class="col col-offset-20">1</div>
+                    <div class="col col-20">Liv</div>
+                </div>
+                <i class="icon ion-ios-bell" ng-click="addEvent()"></i>
+            </li>
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">22</div>
+                    <div class="col col-20"><img src="img/clubes/villa-teresa.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Villa</div>
+                    <div class="col">-</div>
+                    <div class="col col-offset-20">-</div>
+                    <div class="col col-20">Wan</div>
+                </div>
+                <i class="icon ion-ios-bell"></i>
+            </li>
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">29</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/nacional.png" style="width: 30px"/></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Wan</div>
+                    <div class="col">-</div>
+                    <div class="col col-offset-20">-</div>
+                    <div class="col col-20">Nac</div>
+                </div>
+                <i class="icon ion-ios-bell"></i>
+            </li>
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">5</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/river-plate.png" style="width: 30px"/></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Wan</div>
+                    <div class="col">-</div>
+                    <div class="col col-offset-20">-</div>
+                    <div class="col col-20">Riv</div>
+                </div>
+                <i class="icon ion-ios-bell"></i>
+            </li>
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">12</div>
+                    <div class="col col-20"><img src="img/clubes/plaza-colonia.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Plaz</div>
+                    <div class="col">-</div>
+                    <div class="col col-offset-20">-</div>
+                    <div class="col col-20">Wan</div>
+                </div>
+                <i class="icon ion-ios-bell"></i>
+            </li>
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">19</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/juventud.png" style="width: 30px"/></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Wan</div>
+                    <div class="col">-</div>
+                    <div class="col col-offset-20">-</div>
+                    <div class="col col-20">Juv</div>
+                </div>
+                <i class="icon ion-ios-bell"></i>
+            </li>
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">26</div>
+                    <div class="col col-20"><img src="img/clubes/cerro.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Cer</div>
+                    <div class="col">-</div>
+                    <div class="col col-offset-20">-</div>
+                    <div class="col col-20">Wan</div>
+                </div>
+                <i class="icon ion-ios-bell"></i>
+            </li>
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">3</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/el-tanque-sisley.png" style="width: 30px"/>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Wan</div>
+                    <div class="col">-</div>
+                    <div class="col col-offset-20">-</div>
+                    <div class="col col-20">ETS</div>
+                </div>
+                <i class="icon ion-ios-bell"></i>
+            </li>
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">17</div>
+                    <div class="col col-20"><img src="img/clubes/defensor-sporting.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Def</div>
+                    <div class="col">-</div>
+                    <div class="col col-offset-20">-</div>
+                    <div class="col col-20">Wan</div>
+                </div>
+                <i class="icon ion-ios-bell"></i>
+            </li>
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">24</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/fenix.png" style="width: 30px"/></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Wan</div>
+                    <div class="col">-</div>
+                    <div class="col col-offset-20">-</div>
+                    <div class="col col-20">Fen</div>
+                </div>
+                <i class="icon ion-ios-bell"></i>
+            </li>
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">31</div>
+                    <div class="col col-20"><img src="img/clubes/sud-america.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Sud</div>
+                    <div class="col">-</div>
+                    <div class="col col-offset-20">-</div>
+                    <div class="col col-20">Wan</div>
+                </div>
+                <i class="icon ion-ios-bell"></i>
+            </li>
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">07</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/racing-u.png" style="width: 30px"/></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Wan</div>
+                    <div class="col">-</div>
+                    <div class="col col-offset-20">-</div>
+                    <div class="col col-20">Rac</div>
+                </div>
+                <i class="icon ion-ios-bell"></i>
+            </li>
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">15</div>
+                    <div class="col col-20"><img src="img/clubes/penarol.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Pen</div>
+                    <div class="col">-</div>
+                    <div class="col col-offset-20">-</div>
+                    <div class="col col-20">Wan</div>
+                </div>
+                <i class="icon ion-ios-bell"></i>
+            </li>
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">22</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/danubio.png" style="width: 30px"/></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Wan</div>
+                    <div class="col">-</div>
+                    <div class="col col-offset-20">-</div>
+                    <div class="col col-20">Dan</div>
+                </div>
+                <i class="icon ion-ios-bell"></i>
+            </li>
+            <li class="item item-icon-right">
+                <div class="row text-center">
+                    <div class="col col-20 date">29</div>
+                    <div class="col col-20"><img src="img/clubes/rentistas.png" style="width: 30px"/></div>
+                    <div class="col">Apertura</div>
+                    <div class="col col-20"><img src="img/clubes/wanderers.png" style="width: 30px"/></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-20">Dom</div>
+                    <div class="col col-20">Ren</div>
+                    <div class="col">-</div>
+                    <div class="col col-offset-20">-</div>
+                    <div class="col col-20">Wan</div>
+                </div>
+                <i class="icon ion-ios-bell"></i>
+            </li>
+        </ul>
+    </ion-content>
 </ion-view>
