@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'ngCordova','ionic.service.core', 'starter.controllers', 'starter.services', 'monospaced.qrcode'])
+angular.module('starter', ['ionic', 'ngCordova','ionic.service.core', 'starter.controllers', 'starter.services', 'starter.directives', 'monospaced.qrcode'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
@@ -117,6 +117,16 @@ angular.module('starter', ['ionic', 'ngCordova','ionic.service.core', 'starter.c
                     'menuContent': {
                         templateUrl: 'templates/messages.html',
                         controller: 'MessagesCtrl'
+                    }
+                }
+            })
+
+            .state('app.gallery', {
+                url: '/gallery',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/gallery.html',
+                        controller: 'GalleryCtrl'
                     }
                 }
             });

@@ -32,3 +32,32 @@
     white-space: normal;
     word-wrap: break-word;
 }
+
+.bar.bar-dark{
+    background-color: #111;
+}
+
+.dark {
+    background-color: #222;
+}
+
+.dark h1, .dark.h2{
+    color: white;
+}
+
+.dark h4{
+    color: #AAA
+}
+
+.divider{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: #242424;
+}
+
+.button:after{
+    border-right: 1px solid gainsboro;
+}
