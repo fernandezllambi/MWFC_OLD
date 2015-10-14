@@ -61,3 +61,13 @@
 .button:after{
     border-right: 1px solid gainsboro;
 }
+
+.rotate{
+    transform-origin: 0% 100%;
+    transform: rotate(90deg) translate(-50%);
+    /*width: 100%;*/
+}
+
+.width100{
+    width: 100%;
+}

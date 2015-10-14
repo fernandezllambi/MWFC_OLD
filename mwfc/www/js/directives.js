@@ -6,13 +6,23 @@ angular.module('starter.directives', [])
     return {
         restrict: 'A',
         link: function(scope, elem, attr) {
-            console.log(1);
-            debugger;
             elem.on('load', function() {
-                var w = $(this).width(),
-                    h = $(this).height();
+                var w = this.width,
+                    h = this.height;
 
-                var div = elem.parent();
+                if(w > h){
+                    elem.addClass('rotate');
+                    var parent = elem.parent();
+                    var parentW = parent[0].clientWidth;
+                    elem[0].style.height = parentW+"px";
+                    elem[0].style.position = "absolute";
+                    elem[0].style.top = "-42px";
+                }else{
+                    elem.addClass('width100');
+                }
+
+
+
 
                 //check width and height and apply styling to parent here.
             });
