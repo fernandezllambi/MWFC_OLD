@@ -5,7 +5,7 @@ angular.module('starter.controllers')
     .controller('GalleryCtrl', function ($scope, $ionicModal) {
         $scope.imageModal = function (img) {
             $scope.img = img;
-            $ionicModal.fromTemplateUrl("../templates/galleryModal.html", {
+            $ionicModal.fromTemplateUrl("templates/galleryModal.html", {
                 animation: 'slide-in-up',
                 scope: $scope
             }).then(function(modal){
